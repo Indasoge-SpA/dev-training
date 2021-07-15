@@ -24,6 +24,6 @@
     ],
     
     "demo": [
-        
+        'demo/mision_lunar_demo.xml',
     ],
 }
