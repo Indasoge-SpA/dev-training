@@ -20,10 +20,14 @@
     "depends": ['base'],
     
     "data": [
-        
+        'security/mision_lunar_security.xml',
+        'security/ir.model.access.csv',
     ],
     
     "demo": [
         'demo/mision_lunar_demo.xml',
     ],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
 }
