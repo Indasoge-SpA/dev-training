@@ -6,7 +6,7 @@ from odoo import models, fields, api
 
 class Spaceship(models.Model):
     
-    _name = 'academy.spaceship'
+    _name = 'spaceship'
     _description = 'A Space Ship'
     
     name=fields.Char(string='Identifier', required=True)

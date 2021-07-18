@@ -1,4 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-mision_lunar_admin,mision lunar admin,academy.model_academy_spaceship,group_mision_lunar_admin,1,1,1,1
-mision_lunar_crew, mision lunar crew, academy.model_academy_spaceship,group_mision_lunar_crew,1,1,1,0
-mision_lunar_readall,mision lunar readall,model_academy_spaceship,,1,0,0,0

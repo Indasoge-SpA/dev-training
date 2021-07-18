@@ -2,7 +2,7 @@
 
 <odoo>
     <data noupdate="1">
-        <record model="academy.spaceship" id="mision_lunar.tsp000001">
+        <record model="spaceship" id="mision_lunar.tsp000001">
             <field name="name">TSP000001</field>
             <field name="description">Cargo Space Ship Lunar Transporter 000001</field>
             <field name="length">150.0</field>
@@ -14,7 +14,7 @@
             <field name="passanger_number">0</field>
             <field name="active">active</field>
         </record>
-        <record model="academy.spaceship" id="mision_lunar.sp000002">
+        <record model="spaceship" id="mision_lunar.sp000002">
             <field name="name">BSP000001</field>
             <field name="description">Battle Space Ship Lunar Fighter 000001</field>
             <field name="length">75.0</field>

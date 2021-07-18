@@ -2,7 +2,7 @@
 # Odoo Basic Training
 
 {
-    "name": 'Mision lunar',
+    "name": 'Mision Lunar',
     "summary": """ Misión espacial para poblar la luna""",
     "description": """
     
@@ -13,7 +13,7 @@
     "author": 'Indasoge SpA',
     "website": 'https://www.indasoge.com',
     
-    "category": 'Training',
+    "category": 'Exploration',
     
     "version": '0.1',
     
@@ -22,6 +22,7 @@
     "data": [
         'security/mision_lunar_security.xml',
         'security/ir.model.access.csv',
+        'views/mision_lunar_views.xml',
     ],
     
     "demo": [
