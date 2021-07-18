@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Action that opens the view -->
+        <record id='spaceship_action' model='ir.actions.act_window'>
+            <field name="name">Spaceship Fleet Management</field>
+            <field name="res_model">exploration.spaceship</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <!-- Menu items to make the module visible to users -->
+        <!-- Hint: al poner el web_icon en el menu base, hay que poner el nombre del MODULO -->
+        <menuitem name="Exploration" id="spaceship_fleet_base_menu"
+                  sequence="5" 
+                  web_icon="exploration,static/description/icon.png"/>
+        <menuitem name="Fleet" id="spaceship_fleet_sub_menu" 
+                  parent="spaceship_fleet_base_menu" sequence="10"/>
+        <menuitem name="Spaceships" id="spaceship_fleet_menu" 
+                  parent="spaceship_fleet_sub_menu" sequence="20" 
+                  action="spaceship_action"/>
+        
+        <!-- Spaceship Form -->
+        <record model="ir.ui.view" id="spaceship_view_form">
+            <field name="name">spaceship.form</field>
+            <field name="model">exploration.spaceship</field>
+            <field name="arch" type="xml">
+                <form string="Spaceship Form">
+                    <sheet>
+                        <h1><field name="name"/></h1>
+                        <group>
+                            <group>
+                                <field name="code"/>
+                                <field name="ship_type"/>
+                                <field name="crew_number"/>
+                                <field name="passanger_number"/>
+                            </group>
+                            <group>
+                                <field name="length"/>
+                                <field name="width"/>
+                                <field name="heigth"/>
+                            </group>
+                            <group>
+                                <field name="active"/>
+                                <field name="release_date"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Description">
+                                <field name="description"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!-- Spaceship Fleet List -->
+        <record model="ir.ui.view" id="spaceship_view_list">
+            <field name="name">spaceship.list</field>
+            <field name="model">exploration.spaceship</field>
+            <field name="arch" type="xml">
+                <tree string="Spaceship Fleet">
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="release_date"/>
+                    <field name="crew_number"/>
+                    <field name="passanger_number"/>
+                    <field name="ship_type"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+        
+        <!-- Spaceship Fleet Search -->
+        <record model="ir.ui.view" id="spaceship_view_search">
+            <field name="name">spaceship.search</field>
+            <field name="model">exploration.spaceship</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="ship_type"/>
+                    <field name="release_date"
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>
