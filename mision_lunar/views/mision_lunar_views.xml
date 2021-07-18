@@ -16,7 +16,7 @@
         <menuitem name="Mision Lunar" id="spaceship_fleet_sub_menu" 
                   parent="spaceship_fleet_base_menu" sequence="2"/>
         <menuitem name="Spaceships" id="spaceship_fleet_menu" 
-                  parent="spaceship_fleet_base_menu" sequence="3" 
+                  parent="spaceship_fleet_sub_menu" sequence="3" 
                   action="spaceship_action"/>
         
         <!-- Spaceship Form -->
