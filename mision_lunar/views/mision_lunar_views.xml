@@ -10,10 +10,10 @@
         
         <!-- Menu items to make the module visible to users -->
         <!-- Hint: al poner el web_icon en el menu base, hay que poner el nombre del MODULO -->
-        <menuitem name="Mision Lunar" id="spaceship_fleet_base_menu"
+        <menuitem name="Lunar Mission" id="spaceship_fleet_base_menu"
                   sequence="1" 
                   web_icon="mision_lunar,static/description/icon.png"/>
-        <menuitem name="Mision Lunar" id="spaceship_fleet_sub_menu" 
+        <menuitem name="Fleet" id="spaceship_fleet_sub_menu" 
                   parent="spaceship_fleet_base_menu" sequence="2"/>
         <menuitem name="Spaceships" id="spaceship_fleet_menu" 
                   parent="spaceship_fleet_sub_menu" sequence="3" 
